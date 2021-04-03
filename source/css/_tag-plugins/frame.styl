@@ -42,6 +42,27 @@
       margin-top: 0 !important
     .frame
       bottom: 0
+  &#iphone8SG // iphone8深空灰
+    img,video
+      width: 188px
+      margin-top: 70px
+      margin-bottom: 70px
+    .frame
+      background-image: url(https://cdn.jsdelivr.net/gh/Goopher97/tuchuang@master/img/Apple%20iPhone%208%20Space%20Grey.png);
+      width: 237.5px
+      height: 473.5px
+  &[part='top']
+    img,video
+      margin-bottom: 0 !important
+  &:not([part='bottom'])
+    .frame
+      top: 0
+  &[part='bottom']
+    img,video
+      bottom: 0
+      margin-top: 0 !important
+    .frame
+      bottom: 0
 
 @media screen and (max-width: $device-mobile)
   .md .frame-wrap
@@ -53,3 +74,11 @@
       .frame
         width: 238px
         height: 476px
+    &#iphone8SG // iphone8深空灰
+      img,video
+        width: 188px
+        margin-top: 70px
+        margin-bottom: 70px
+      .frame
+        width: 237.5px
+        height: 473.5px
